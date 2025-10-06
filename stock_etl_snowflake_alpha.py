@@ -149,7 +149,7 @@ with DAG(
 
     # Fetch Airflow Variables
     api_key = Variable.get("alphavantage_api_key")
-    symbol = Variable.get("stock_symbol", default_var="AAPL")  # Can be parameterized
+    symbol = Variable.get("stock_symbol")  # Can be parameterized
 
     # Define task dependencies
     extracted_data = extract_stock_data(symbol, api_key)
