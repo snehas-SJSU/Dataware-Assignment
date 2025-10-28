@@ -80,7 +80,7 @@ with DAG(
     start_date=datetime(2024, 10, 2),
     schedule='45 2 * * *',  # Daily at 2:45 AM
     catchup=False,
-    tags=['ETL']
+    tags=['ELT']
 ) as dag:
 
     # Task dependencies
