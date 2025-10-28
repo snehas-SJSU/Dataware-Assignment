@@ -66,7 +66,7 @@ def run_ctas(schema, table, select_sql, primary_key=None):
 with DAG(
     dag_id='build_session_summary',
     start_date=datetime(2024, 10, 2),
-    schedule='55 2 * * *',  # Runs daily at 02:45 AM
+    schedule='55 2 * * *',  # Runs daily at 02:55 AM
     catchup=False,
     tags=['ELT']
 ) as dag:
